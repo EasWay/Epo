@@ -1,0 +1,97 @@
+{
+  "entities": {
+    "SiteConfig": {
+      "title": "Site Configuration",
+      "description": "Global settings for the website",
+      "type": "object",
+      "properties": {
+        "heroTitle": { "type": "string" },
+        "heroSubtitle": { "type": "string" },
+        "heroImage": { "type": "string" },
+        "address": { "type": "string" },
+        "phone": { "type": "string" },
+        "monSatHours": { "type": "string" },
+        "sunHours": { "type": "string" },
+        "instagram": { "type": "string" },
+        "facebook": { "type": "string" }
+      },
+      "required": ["heroTitle", "heroSubtitle", "heroImage", "address", "phone"]
+    },
+    "MenuItem": {
+      "title": "Menu Item",
+      "description": "A food or drink item on the menu",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "price": { "type": "string" },
+        "category": { "type": "string" },
+        "image": { "type": "string" },
+        "order": { "type": "number" }
+      },
+      "required": ["name", "price", "category", "image"]
+    },
+    "GalleryImage": {
+      "title": "Gallery Image",
+      "description": "An image for the ambiance gallery",
+      "type": "object",
+      "properties": {
+        "url": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "order": { "type": "number" }
+      },
+      "required": ["url", "title", "category"]
+    },
+    "Event": {
+      "title": "Event",
+      "description": "A weekly ritual or special event",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "date": { "type": "string" },
+        "image": { "type": "string" },
+        "order": { "type": "number" }
+      },
+      "required": ["title", "description", "date", "image"]
+    },
+    "Reservation": {
+      "title": "Reservation",
+      "description": "A booking request from a customer",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "date": { "type": "string" },
+        "guests": { "type": "string" },
+        "message": { "type": "string" },
+        "status": { "type": "string", "enum": ["pending", "confirmed", "cancelled"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "email", "date", "guests", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "config/site": {
+      "schema": "SiteConfig",
+      "description": "Singleton configuration for the site"
+    },
+    "menu": {
+      "schema": "MenuItem",
+      "description": "List of menu items"
+    },
+    "gallery": {
+      "schema": "GalleryImage",
+      "description": "List of gallery images"
+    },
+    "events": {
+      "schema": "Event",
+      "description": "List of events"
+    },
+    "reservations": {
+      "schema": "Reservation",
+      "description": "Log of customer reservations"
+    }
+  }
+}

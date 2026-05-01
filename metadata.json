@@ -1,0 +1,8 @@
+{
+  "name": "Epo's Bar & Grill Osu",
+  "description": "Ghanaian-Chinese fusion restaurant in Osu, Accra. Famous for our beef sauce and fried rice.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": ["PWA", "Local Database", "Multi-page Routing"]
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-gold: #C5A031;
+  --color-gold-light: #DFBF5E;
+  --color-gold-dark: #8E711A;
+  
+  --shadow-premium: 0 20px 50px rgba(0, 0, 0, 0.5);
+  --shadow-gold: 0 10px 30px rgba(197, 160, 89, 0.15);
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --background: #0A0A0B;
+    --foreground: #FFFFFF;
+  }
+
+  body {
+    @apply bg-[#0A0A0B] text-white selection:bg-gold selection:text-black;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Premium Scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-black/20;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full hover:bg-gold/40 transition-colors;
+  }
+
+  /* Custom Typography Utils */
+  .serif {
+    font-family: var(--font-serif);
+  }
+
+  .italic-gold {
+    @apply italic text-gold;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-2xl border border-white/5;
+  }
+
+  .glass-card {
+    @apply bg-white/[0.02] backdrop-blur-xl border border-white/5 hover:border-white/10 transition-all duration-500 shadow-premium;
+  }
+
+  .gold-accent {
+    @apply text-gold;
+  }
+
+  .perspective-2000 {
+    perspective: 2000px;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes beam {
+  0%, 100% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+}
+
+.animate-beam {
+  animation: beam 8s linear infinite;
+}

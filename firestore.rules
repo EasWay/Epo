@@ -1,0 +1,109 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 0. Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helpers
+    function isSignedIn() { return request.auth != null; }
+    function isAdmin() { return isSignedIn() && exists(/databases/$(database)/documents/admins/$(request.auth.uid)); }
+    function isValidId(id) { return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); }
+    function incoming() { return request.resource.data; }
+    function existing() { return resource.data; }
+
+    // 1. Site Config (Singleton)
+    match /config/site {
+      allow read: if true;
+      allow write: if isAdmin();
+      
+      function isValidSiteConfig(data) {
+        return data.keys().hasAll(['heroTitle', 'heroSubtitle', 'heroImage', 'address', 'phone', 'monSatHours', 'sunHours', 'instagram', 'facebook'])
+               && data.keys().size() == 9
+               && data.heroTitle is string && data.heroTitle.size() <= 200
+               && data.heroSubtitle is string && data.heroSubtitle.size() <= 500
+               && data.heroImage is string && data.heroImage.size() <= 1000
+               && data.address is string && data.address.size() <= 200
+               && data.phone is string && data.phone.size() <= 50
+               && data.monSatHours is string && data.monSatHours.size() <= 100
+               && data.sunHours is string && data.sunHours.size() <= 100
+               && data.instagram is string && data.instagram.size() <= 200
+               && data.facebook is string && data.facebook.size() <= 200;
+      }
+    }
+
+    // 2. Menu Items
+    match /menu/{itemId} {
+      allow read: if true;
+      allow write: if isAdmin() && isValidMenuItem(incoming());
+      
+      function isValidMenuItem(data) {
+        return data.keys().hasAll(['name', 'description', 'price', 'category', 'image', 'order'])
+               && data.keys().size() == 6
+               && data.name is string && data.name.size() <= 100
+               && data.description is string && data.description.size() <= 500
+               && data.price is string && data.price.size() <= 50
+               && data.category is string && data.category.size() <= 50
+               && data.image is string && data.image.size() <= 1000
+               && data.order is number;
+      }
+    }
+
+    // 3. Gallery Images
+    match /gallery/{imageId} {
+      allow read: if true;
+      allow write: if isAdmin() && isValidGalleryImage(incoming());
+      
+      function isValidGalleryImage(data) {
+        return data.keys().hasAll(['url', 'title', 'category', 'order'])
+               && data.keys().size() == 4
+               && data.url is string && data.url.size() <= 1000
+               && data.title is string && data.title.size() <= 100
+               && data.category is string && data.category.size() <= 50
+               && data.order is number;
+      }
+    }
+
+    // 4. Events
+    match /events/{eventId} {
+      allow read: if true;
+      allow write: if isAdmin() && isValidEvent(incoming());
+      
+      function isValidEvent(data) {
+        return data.keys().hasAll(['title', 'description', 'date', 'image', 'order'])
+               && data.keys().size() == 5
+               && data.title is string && data.title.size() <= 100
+               && data.description is string && data.description.size() <= 500
+               && data.date is string && data.date.size() <= 100
+               && data.image is string && data.image.size() <= 1000
+               && data.order is number;
+      }
+    }
+
+    // 5. Reservations
+    match /reservations/{resId} {
+      allow create: if isValidReservation(incoming());
+      allow read, update, delete: if isAdmin();
+      
+      function isValidReservation(data) {
+        return data.keys().hasAll(['name', 'email', 'date', 'guests', 'message', 'status', 'createdAt'])
+               && data.keys().size() == 7
+               && data.name is string && data.name.size() <= 100
+               && data.email is string && data.email.size() <= 100
+               && data.date is string && data.date.size() <= 100
+               && data.guests is string && data.guests.size() <= 20
+               && data.message is string && data.message.size() <= 1000
+               && data.status in ['pending', 'confirmed', 'cancelled']
+               && data.createdAt == request.time;
+      }
+    }
+    
+    // 6. Admin list
+    match /admins/{userId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn() && request.auth.token.email == 'ko2527600@gmail.com';
+      allow delete: if isAdmin();
+    }
+  }
+}

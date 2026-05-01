@@ -1,0 +1,292 @@
+{
+  "menu": [
+    {
+      "id": "m1",
+      "name": "Beef Sauce (Standard)",
+      "description": "Our signature dish. Sliced beef sautéed with green peppers and onions in a savory soy-based sauce.",
+      "price": "GH₵ 75.00",
+      "category": "Chinese-Fusion",
+      "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&q=80&w=800",
+      "order": 1
+    },
+    {
+      "id": "m2",
+      "name": "Assorted Fried Rice",
+      "description": "Fried rice prepared with eggs, beef strips, chicken, and sliced sausages.",
+      "price": "GH₵ 85.00",
+      "category": "Chinese-Fusion",
+      "image": "https://images.unsplash.com/photo-1534422298391-e4f8c170db06?auto=format&fit=crop&q=80&w=800",
+      "order": 2
+    },
+    {
+      "id": "m3",
+      "name": "Fried Gizzards",
+      "description": "Seasoned gizzards fried and tossed in a spicy pepper and onion mix.",
+      "price": "GH₵ 60.00",
+      "category": "Ghanaian",
+      "image": "https://images.unsplash.com/photo-1562967914-6c827383d944?auto=format&fit=crop&q=80&w=800",
+      "order": 3
+    },
+    {
+      "id": "m4",
+      "name": "Grilled Tilapia",
+      "description": "Tilapia seasoned with local spices and grilled over charcoal. Served with Banku or Yam Chips.",
+      "price": "GH₵ 120.00",
+      "category": "Ghanaian",
+      "image": "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&q=80&w=800",
+      "order": 4
+    },
+    {
+      "id": "m5",
+      "name": "Assorted Jollof Rice",
+      "description": "Tomato-based jollof rice served with chicken, beef, and mixed vegetables.",
+      "price": "GH₵ 80.00",
+      "category": "Ghanaian",
+      "image": "https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&q=80&w=800",
+      "order": 5
+    },
+    {
+      "id": "m6",
+      "name": "Chicken Spring Rolls (4pcs)",
+      "description": "Crispy rolls filled with minced chicken and vegetables. Served with a dipping sauce.",
+      "price": "GH₵ 45.00",
+      "category": "Chinese-Fusion",
+      "image": "https://images.unsplash.com/photo-1544333346-6aa334685c1c?auto=format&fit=crop&q=80&w=800",
+      "order": 6
+    },
+    {
+      "id": "m7",
+      "name": "Samosas (4pcs)",
+      "description": "Golden fried pastries with spiced meat filling.",
+      "price": "GH₵ 40.00",
+      "category": "Appetizers",
+      "image": "https://images.unsplash.com/photo-1601050690597-df056fb4ce7d?auto=format&fit=crop&q=80&w=800",
+      "order": 7
+    },
+    {
+      "id": "m8",
+      "name": "Fried Yam",
+      "description": "Crispy deep-fried yam chips.",
+      "price": "GH₵ 30.00",
+      "category": "Sides",
+      "image": "https://images.unsplash.com/photo-1518013391915-e4064117d23a?auto=format&fit=crop&q=80&w=800",
+      "order": 8
+    }
+  ],
+  "events": [],
+  "gallery": [
+    {
+      "id": "g1",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/571489259_18076042558928369_5140053722785021483_n.jpg?stp=c0.437.1125.1125a_dst-jpg_e15_s150x150_tt6&_nc_ht=instagram.facc6-1.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2gHntq-Yt36zyQVk6pN13By1ZqAfuoTbxGP3ZTwxQcDX-0s2O_tTrWLfx7ulcA8kh5o&_nc_ohc=9asVzdGgs40Q7kNvwHuYf5i&_nc_gid=rQC0Nolax1bKPP04Is1ehg&edm=AGXveE0BAAAA&ccb=7-5&oh=00_Af4mk-FT9opr6b3EJRRCRzgwwfIGKXWIjZrSFqizy6SqBA&oe=69FAD1B0&_nc_sid=522435",
+      "title": "Evening Ambiance",
+      "category": "Ambiance",
+      "order": 1
+    },
+    {
+      "id": "g2",
+      "url": "https://instagram.facc1-1.fna.fbcdn.net/v/t51.82787-15/572218486_17959731332859085_5713356263827513444_n.jpg?stp=c0.483.1242.1242a_dst-jpg_e15_s150x150_tt6&_nc_ht=instagram.facc1-1.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2gHntq-Yt36zyQVk6pN13By1ZqAfuoTbxGP3ZTwxQcDX-0s2O_tTrWLfx7ulcA8kh5o&_nc_ohc=c0fTnI5ZKeIQ7kNvwFcV7Ts&_nc_gid=rQC0Nolax1bKPP04Is1ehg&edm=AGXveE0BAAAA&ccb=7-5&oh=00_Af4QshmdicK1YRii9s10HIO3H67_VZfYuWqLnF-oDiWopQ&oe=69FAEA8F&_nc_sid=522435",
+      "title": "Culinary Fusion",
+      "category": "Food",
+      "order": 2
+    },
+    {
+      "id": "g3",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/657693048_18159136096433613_6982896596633084018_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=MzE1NTcwMjM2Njg3OTUzNzQzMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwNTZ4MTMyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=LJrWS_EgVtgQ7kNvwHecCqN&_nc_oc=AdpFBP54F_iHJvMrr--7dffvsxIbSfmauxzh0P423XY4Zrn4f6tltDuhsvgkThLXS-U&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=7&_nc_ht=instagram.facc6-1.fna&_nc_gid=6EouBdO7A7gqfpaSwsrhEw&_nc_ss=7a22e&oh=00_Af4fvC540wUZG3b92cDI-D8tft5qLutzWJTX6LMBGSRYbw&oe=69FAD5D5",
+      "title": "Osu 8th Lane Legacy",
+      "category": "Legacy",
+      "order": 3
+    },
+    {
+      "id": "g4",
+      "url": "https://instagram.facc1-1.fna.fbcdn.net/v/t51.82787-15/657643954_18354983812235365_1657806439964650264_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=MzE1NTcwMDY5Mzk5ODEyNjY1Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwMDB4MTAwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=yz7ntczDXQ0Q7kNvwHCrMv3&_nc_oc=Adq-s4EnDef9kKsfryYXZoKJzY5hXgILhwpF86lVojJcV9pZtTHQ1Ibvsr6yRA2iRt8&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=7&_nc_ht=instagram.facc1-1.fna&_nc_gid=6EouBdO7A7gqfpaSwsrhEw&_nc_ss=7a22e&oh=00_Af7Rj8vcPmblhnOTuem1odluA8vlpNDiGwtKi-E7Sn46Cw&oe=69FAD96F",
+      "title": "Vibrant Plating",
+      "category": "Food",
+      "order": 4
+    },
+    {
+      "id": "g5",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/655157672_18095364938009160_5475627701275085260_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzE1NTY5NzYxMTcyMTU2NDY1MQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjk3MXg5NzEuc2RyLkMzIn0%3D&_nc_ohc=g_nTCQ6ov_gQ7kNvwHpmPyb&_nc_oc=AdoXRqeBgUlscGdCkYgzTGQHRPcVgWVwfx-hhnFrpjeGcKYf7rx2nt_VlYhAyQ7kAtk&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=8&_nc_ht=instagram.facc6-1.fna&_nc_gid=6EouBdO7A7gqfpaSwsrhEw&_nc_ss=7a22e&oh=00_Af6kTmzMUgyioc_SaEPfVzclSnhQkE1QXB57m5djZKJSuA&oe=69FAC3B2",
+      "title": "Kitchen Mastery",
+      "category": "Ambiance",
+      "order": 5
+    },
+    {
+      "id": "g6",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/656638089_18092910985895744_1975054682972014616_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ig_cache_key=MzE1NTM2MDQwNDczNzM4ODE4OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjkwMHgxMTI1LnNkci5DMyJ9&_nc_ohc=N3OuoWcBChkQ7kNvwGxRzfm&_nc_oc=Ado68X9L52_iwWbHkDzE09BM7WuyvuFoh7UA4K5b3EpfE1fW6qI5DF9gqaYkuk71b5I&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=8&_nc_ht=instagram.facc6-1.fna&_nc_gid=iW_m5nqNhtZ-tLCsQhBJcA&_nc_ss=7a22e&oh=00_Af6gKjpaRYjHz9NThUS_tD-bu14YVRjZttBhl1J2khiBWg&oe=69FAE2FF",
+      "title": "Signature Flavors",
+      "category": "Food",
+      "order": 6
+    },
+    {
+      "id": "g7",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.71878-15/548146561_784318614202718_5768064977947268986_n.jpg?stp=c0.248.640.640a_dst-jpg_e15_s150x150_tt6&_nc_ht=instagram.facc6-1.fna.fbcdn.net&_nc_cat=102&_nc_oc=Q6cZ2gHntq-Yt36zyQVk6pN13By1ZqAfuoTbxGP3ZTwxQcDX-0s2O_tTrWLfx7ulcA8kh5o&_nc_ohc=JWv1HZ_cjk4Q7kNvwH56i2K&_nc_gid=rQC0Nolax1bKPP04Is1ehg&edm=AGXveE0BAAAA&ccb=7-5&oh=00_Af7GK9ciPucSKUjswZn_4XotfnMabiE22D59E1YvCcyf2w&oe=69FAF1A7&_nc_sid=522435",
+      "title": "Evening Glow",
+      "category": "Ambiance",
+      "order": 7
+    },
+    {
+      "id": "g8",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/561108570_18075103457128299_1672603984536410180_n.jpg?stp=c0.483.1242.1242a_dst-jpg_e15_s150x150_tt6&_nc_ht=instagram.facc6-1.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2gHntq-Yt36zyQVk6pN13By1ZqAfuoTbxGP3ZTwxQcDX-0s2O_tTrWLfx7ulcA8kh5o&_nc_ohc=p2V8wbs7sOcQ7kNvwHoiEts&_nc_gid=rQC0Nolax1bKPP04Is1ehg&edm=AGXveE0BAAAA&ccb=7-5&oh=00_Af746rL_2GWI5HGgwSej4LQZHTOMfYGvWyw9dxMmvuTkvQ&oe=69FAEFAE&_nc_sid=522435",
+      "title": "Plate Art",
+      "category": "Food",
+      "order": 8
+    },
+    {
+      "id": "g9",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/571919863_18189230836330728_3719179882045666267_n.jpg?stp=c0.483.1242.1242a_dst-jpg_e15_s150x150_tt6&_nc_ht=instagram.facc6-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gHntq-Yt36zyQVk6pN13By1ZqAfuoTbxGP3ZTwxQcDX-0s2O_tTrWLfx7ulcA8kh5o&_nc_ohc=yqR-yrldr80Q7kNvwFeM9CS&_nc_gid=rQC0Nolax1bKPP04Is1ehg&edm=AGXveE0BAAAA&ccb=7-5&oh=00_Af77NHCzdK0wYKdsO97BwgOpUh8vrNfg9tpUjGLXsyYTww&oe=69FAD9A1&_nc_sid=522435",
+      "title": "Fusion Night",
+      "category": "Food",
+      "order": 9
+    },
+    {
+      "id": "g10",
+      "url": "https://instagram.facc1-1.fna.fbcdn.net/v/t51.71878-15/502133810_492494130557240_5680926009727796767_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=101&ig_cache_key=MzE1NTcwMzcyODM1MDUxNzE4Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjcyMHg5MDAuc2RyLkMzIn0%3D&_nc_ohc=2Y3lzHyYTgcQ7kNvwFSg6LV&_nc_oc=Adq-RD9BXzJOqs6wiZYKzHBWPjd81qCxG2GFy_aXeP7EeL2ugIbImWsGneGtRaFQDvQ&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&_nc_ht=instagram.facc1-1.fna&_nc_gid=6EouBdO7A7gqfpaSwsrhEw&_nc_ss=7a22e&oh=00_Af5pCzCWK8thUr1Hg74WCA_ueaXzI45Y3uB1PmuGzzgpEQ&oe=69FADEAA",
+      "title": "Legacy Flavors",
+      "category": "Legacy",
+      "order": 10
+    },
+    {
+      "id": "g11",
+      "url": "https://instagram.facc1-1.fna.fbcdn.net/v/t51.82787-15/670930544_18577721962030275_7214094575307030421_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzE1NTY5ODEzNTQ2NDE2ODI0Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc1MHg3NTAuc2RyLkMzIn0%3D&_nc_ohc=53J_bqgxYgIQ7kNvwERFR_D&_nc_oc=Adrwj2eJH6hTrUqrFIvxA-FI3-WJj-2U6WAKpc6AAkmhJIiH3yaspZZ1FOp5TB8Ij0Y&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&_nc_ht=instagram.facc1-1.fna&_nc_gid=6EouBdO7A7gqfpaSwsrhEw&_nc_ss=7a22e&oh=00_Af5JGbbsRMWWCYBDYjogPGMpEIv5JY0hLFQQ0EePO7HVLg&oe=69FAD80F",
+      "title": "Modern Heritage",
+      "category": "Food",
+      "order": 11
+    },
+    {
+      "id": "g12",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/654263694_18107669491656367_2129468065991325574_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=MzE1NTY5NzIxNzk4NTQ5ODQxMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjc1MHg3NTAuc2RyLkMzIn0%3D&_nc_ohc=9SPvQPcaKyoQ7kNvwHXIqks&_nc_oc=AdoFpAgKzrhxOt5LeTCBtbsf_oLvsGIW7Rp4CeBCfrWHqFs18yRTPPeRbW2m4V5W7BA&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&_nc_ht=instagram.facc6-1.fna&_nc_gid=6EouBdO7A7gqfpaSwsrhEw&_nc_ss=7a22e&oh=00_Af5eYXfdhlMvGJncMQwfHou44MSm_lkhI4LAsKUliVV0oA&oe=69FAE06B",
+      "title": "Accra Nightlife",
+      "category": "Ambiance",
+      "order": 12
+    },
+    {
+      "id": "g13",
+      "url": "https://instagram.facc1-1.fna.fbcdn.net/v/t51.82787-15/655966852_18087039482250115_8427582271207827584_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=MzE1NTY5NDM3NzQzNTAzMjMyMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjU2NXgzMTkuc2RyLkMzIn0%3D&_nc_ohc=VrIYZcz_CgwQ7kNvwFvvdw9&_nc_oc=AdqX3FWlCQbZ45mkdjYQqvu8xs4Cmik1QdhJENRPvcjGyt11NxO1cgKXXrWfNUEJTO0&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&_nc_ht=instagram.facc1-1.fna&_nc_gid=g3h5vu60D5XUmJmcqmyZUQ&_nc_ss=7a22e&oh=00_Af61pScFwm2owB4BNvyA6lyjwZxwmAeY_MMqNS6oineUcQ&oe=69FAE776",
+      "title": "Kitchen Detail",
+      "category": "Ambiance",
+      "order": 13
+    },
+    {
+      "id": "g14",
+      "url": "https://instagram.facc1-1.fna.fbcdn.net/v/t51.82787-15/660658123_18387627175085027_1821105897469178184_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=MzE1NTY5NDE1NjIxMDY5NTI5MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjcyM3g0MDguc2RyLkMzIn0%3D&_nc_ohc=4IpqKKoyRusQ7kNvwENJmto&_nc_oc=AdqxWSLiDHik06NakFhROoHRpQyQprvE7eQt2f_X4Q6p1QzZSGRXl2ANjKVNhdZodw0&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&_nc_ht=instagram.facc1-1.fna&_nc_gid=g3h5vu60D5XUmJmcqmyZUQ&_nc_ss=7a22e&oh=00_Af6oAx25YUnIBORuJe0cpBU3wbxZmwwL_K9RzhQdYwxwKQ&oe=69FAC384",
+      "title": "Fusion Platter",
+      "category": "Food",
+      "order": 14
+    },
+    {
+      "id": "g15",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/626278039_17938385853014275_6818444633034241487_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=MzE1NTY5MzA0OTc3ODI3Njg5OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjcyM3g0MDguc2RyLkMzIn0%3D&_nc_ohc=gyO_Ef-XN1oQ7kNvwGA0M34&_nc_oc=AdpBABIDI2jnKJdP-_X2RFerCxH2gooyB5JEUopJEEK9dcE46gPUx0bXygGZnKIvnHA&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&_nc_ht=instagram.facc6-1.fna&_nc_gid=g3h5vu60D5XUmJmcqmyZUQ&_nc_ss=7a22e&oh=00_Af7bOuv5HGkFdtv0u_EqPtMy0UT3QsP24XNIpwUSNHaQKA&oe=69FAD261",
+      "title": "Bar Vibes",
+      "category": "Ambiance",
+      "order": 15
+    },
+    {
+      "id": "g16",
+      "url": "https://instagram.facc1-1.fna.fbcdn.net/v/t51.82787-15/651327997_17995336487868627_5371461453025230966_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzE1NTY5MDU5MjY3MTI0NTgzMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwMjF4MTI3My5zZHIuQzMifQ%3D%3D&_nc_ohc=NEpuN49-ye0Q7kNvwFrMZs4&_nc_oc=AdrT9iAOeySqbyFETK2YM6s_6rlQQG3VPxv0F_yu_7njpJtEXkzRwsYo-ccyq9rF84I&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=7&_nc_ht=instagram.facc1-1.fna&_nc_gid=g3h5vu60D5XUmJmcqmyZUQ&_nc_ss=7a22e&oh=00_Af6KbGJKrA4tr7XxeRnXldsBzR1AULMaLiaMVR9gJoj5EQ&oe=69FADC19",
+      "title": "Classic Dish",
+      "category": "Food",
+      "order": 16
+    },
+    {
+      "id": "g17",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/656288804_18139172824502952_251403645271452314_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=MzE1NTY4ODE4MzgxNTQ2MjIzMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExMjV4MTQwNi5zZHIuQzMifQ%3D%3D&_nc_ohc=153Qs5zDOdwQ7kNvwHh2Yev&_nc_oc=AdoERyFrLbIlvv23K4smFCDx0k9pe_dcsRySKPSk2vSx356cKgfs1TdVVr3glboxg9U&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=7&_nc_ht=instagram.facc6-1.fna&_nc_gid=g3h5vu60D5XUmJmcqmyZUQ&_nc_ss=7a22e&oh=00_Af6AE3vxWR4K5XsgngLbvJ8TIbccsvX7NMWcaPvzr3AUKw&oe=69FAEF3B",
+      "title": "Signature Plating",
+      "category": "Food",
+      "order": 17
+    },
+    {
+      "id": "g18",
+      "url": "https://instagram.facc1-1.fna.fbcdn.net/v/t51.82787-15/655075449_18094809409856543_8873253555326616364_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=MzE1NTY4NzkyMDY4MTUwMDEwMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyNzl4MTU5OS5zZHIuQzMifQ%3D%3D&_nc_ohc=UI_ZwmEPcA0Q7kNvwEzfgap&_nc_oc=AdqIi6zj10MF2b1iM_b03ghwbRINGNjXJncmVrYSostzUlO5ZMPQQQENL6xb5ojQOJs&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=7&_nc_ht=instagram.facc1-1.fna&_nc_gid=g3h5vu60D5XUmJmcqmyZUQ&_nc_ss=7a22e&oh=00_Af6r0AERGPOqA0lXX8JKdD2jneNgOA8vWV6jq3GUo0NisQ&oe=69FAC82D",
+      "title": "Osu Scenes",
+      "category": "Legacy",
+      "order": 18
+    },
+    {
+      "id": "g19",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/652761235_18093213965121823_1444853052681242048_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=MzE1NTY4NzcwNzQwOTM5MjAwNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEyNzl4MTU5OS5zZHIuQzMifQ%3D%3D&_nc_ohc=zbnQENAU67cQ7kNvwFrnhje&_nc_oc=Adoxr84oGCJTXzNss0LDCoz3ahFY27_YDMYtP7Ohxu_hXOYNO4EpBqPPkGHuX1zEhM4&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=7&_nc_ht=instagram.facc6-1.fna&_nc_gid=g3h5vu60D5XUmJmcqmyZUQ&_nc_ss=7a22e&oh=00_Af6kpVmV14JFnarOKI0UeTII5rsE7lJjFtzVMHpdxf3qQQ&oe=69FAD6DE",
+      "title": "Evening Crowds",
+      "category": "Ambiance",
+      "order": 19
+    },
+    {
+      "id": "g20",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/653385937_18089790494156006_3330003001848101718_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=MzE1NTQ3MjMyMzYxNTk5NjgwMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwMzd4MTI5Ni5zZHIuQzMifQ%3D%3D&_nc_ohc=WcBg9zO8SqMQ7kNvwEuftAP&_nc_oc=Adpr_BcJEkDmty448MWi0vUnFnZbY6Dd_-y1_8R14F_TfC840M1S8L0dQHKE_6_BOoQ&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=7&_nc_ht=instagram.facc6-1.fna&_nc_gid=g3h5vu60D5XUmJmcqmyZUQ&_nc_ss=7a22e&oh=00_Af6PbEnzCu0e_HRTAnhwyLSQOa5NYBxVsQEnJXySGCauIg&oe=69FAC6E8",
+      "title": "Flavor Burst",
+      "category": "Food",
+      "order": 20
+    },
+    {
+      "id": "g21",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/652508777_18010894019834494_72786618496309536_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzE1NTQ3MjE2NzgzMTE0NDYzNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzB4MTQ2Mi5zZHIuQzMifQ%3D%3D&_nc_ohc=pYOSQ-jKdQMQ7kNvwFSmwL5&_nc_oc=AdqZWHWLXlhNg_R5f2guRYHLQq48CMJmWX3ayWcZGSDDOtE6jJWPspvDJqnUoGx1hgE&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=7&_nc_ht=instagram.facc6-1.fna&_nc_gid=g3h5vu60D5XUmJmcqmyZUQ&_nc_ss=7a22e&oh=00_Af6rz15ey3229auuqPHdH2VZTlh0vqoC7aq2GCUgatbs0Q&oe=69FAE875",
+      "title": "Heritage Dining",
+      "category": "Legacy",
+      "order": 21
+    },
+    {
+      "id": "g22",
+      "url": "https://instagram.facc1-1.fna.fbcdn.net/v/t51.82787-15/653906412_18105870676868034_9164074582727948012_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=MzE1NTQ3MjAxNzM3MzIwMzA5MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEzNzZ4MTcyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=fwsYWsEK6xkQ7kNvwFRD9vv&_nc_oc=AdrQqXNmWfSJbuv6dsl_W9C_6hCvNs3DktRHQUB1arXTsp0GMFtU4S2Oo6ecQ1uZ0Yc&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=7&_nc_ht=instagram.facc1-1.fna&_nc_gid=g3h5vu60D5XUmJmcqmyZUQ&_nc_ss=7a22e&oh=00_Af6FntpjOQkRmhqSDw3N-rh1oat6c0Y-8FkbZkCBuzMQeA&oe=69FACDB3",
+      "title": "Fusion Feast",
+      "category": "Food",
+      "order": 22
+    },
+    {
+      "id": "g23",
+      "url": "https://instagram.facc1-1.fna.fbcdn.net/v/t51.82787-15/653669188_18113763679669882_237993969529507327_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ig_cache_key=MzE1NTQ3MTEyODg3Njg4NTM0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0MDZ4MTc1Ny5zZHIuQzMifQ%3D%3D&_nc_ohc=OLRUHctmIE4Q7kNvwFvrPT6&_nc_oc=AdoNpTpECzXhMX-mKGLUiVh15OhvwAJMy8h4_Pn37Er1uN3WgFjDMQdmVe7w7iJCdZw&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=7&_nc_ht=instagram.facc1-1.fna&_nc_gid=g3h5vu60D5XUmJmcqmyZUQ&_nc_ss=7a22e&oh=00_Af6fggF5LRDcOeWMFjCy4Vahgq62gzKui4pWi9i51wdXeQ&oe=69FAF0E4",
+      "title": "Chef\'s Special",
+      "category": "Food",
+      "order": 23
+    },
+    {
+      "id": "g24",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/657593304_18584153290013079_2304480836691462386_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ig_cache_key=MzE1NTQ3MDc0NDIzNDA3NDgyNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0MDh4MTc2MC5zZHIuQzMifQ%3D%3D&_nc_ohc=wx9MBEtFvv0Q7kNvwGpOvrV&_nc_oc=AdqJZra_VeRwIxtbCTU_x5Eq8Szmpb9CUBGHbfr_eOlGrEYmE9B_kvv9acrz9XGhsTY&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=7&_nc_ht=instagram.facc6-1.fna&_nc_gid=g3h5vu60D5XUmJmcqmyZUQ&_nc_ss=7a22e&oh=00_Af4POr2OVZ8hgiWT7qfQcFdrWnISnphle3RxTU8puYBdOw&oe=69FAC564",
+      "title": "Plate Presentation",
+      "category": "Food",
+      "order": 24
+    },
+    {
+      "id": "g25",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/652758623_18105490459853443_2971016395947248033_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzE1NTQ3MDI5OTU4NzU4MTczMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNDN4MTQyOS5zZHIuQzMifQ%3D%3D&_nc_ohc=21ZKREH2wSAQ7kNvwGLpw70&_nc_oc=Adr5SHs6Hyzv0AZ91SkXml2nH5PGIkn1hYCSEDhV9Ee9yOsW1U8f0t5dSX1tWxmHwVk&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=7&_nc_ht=instagram.facc6-1.fna&_nc_gid=VdbvLFNIMm_Ml4wIFm9dIw&_nc_ss=7a22e&oh=00_Af5HQ362o6EsT7D1BRRUN1Q8AAKdGSiPpXYaPikQxfYh9A&oe=69FAEEA1",
+      "title": "Table Setting",
+      "category": "Ambiance",
+      "order": 25
+    },
+    {
+      "id": "g26",
+      "url": "https://instagram.facc1-1.fna.fbcdn.net/v/t51.82787-15/655147315_18110302264827328_1422506419372306650_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=MzE1NTQxMTg1NTQyNTg2NTAyNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjkzNXgxMTY2LnNkci5DMyJ9&_nc_ohc=8C_D3yHpQucQ7kNvwFysSuE&_nc_oc=Adr8t9rIfFS2RD-Ct1VLfri1b-HX89mGXd2bltA9sh3_0gxgouc2LX7lGGVnd3HHbTU&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=8&_nc_ht=instagram.facc1-1.fna&_nc_gid=VdbvLFNIMm_Ml4wIFm9dIw&_nc_ss=7a22e&oh=00_Af7LeoOfoOpVoPlZbjc7fDD8u0m_a4y7WSjPxI6Gi599Ew&oe=69FACBAC",
+      "title": "Night View",
+      "category": "Ambiance",
+      "order": 26
+    },
+    {
+      "id": "g27",
+      "url": "https://instagram.facc6-1.fna.fbcdn.net/v/t51.82787-15/655930568_18101549683741153_2199075882938496897_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzE1NTQxMTYwMzk4NTU0NDQxOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0MDZ4MTc1Ny5zZHIuQzMifQ%3D%3D&_nc_ohc=yO_PxGZ0SxIQ7kNvwEBUkOU&_nc_oc=AdqHkeNaqdhmBNNS3I6rRsTzmVvWoto8p5uh8rZIKwLxnnQsqTcK3OR7j3_L3ddgfVA&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&se=7&_nc_ht=instagram.facc6-1.fna&_nc_gid=VdbvLFNIMm_Ml4wIFm9dIw&_nc_ss=7a22e&oh=00_Af7tvNL9c3ILX1lrLcRhQpdUni7fRuhCXr7ZjA2ySV7iJw&oe=69FAF3F7",
+      "title": "Legacy Shots",
+      "category": "Legacy",
+      "order": 27
+    },
+    {
+      "id": "g28",
+      "url": "https://instagram.facc1-1.fna.fbcdn.net/v/t51.82787-15/669554433_18160793293439219_8398339968198185766_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=MzE1NTQwNzU1NjA0NTk4NjUyNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY5M3g1MjIuc2RyLkMzIn0%3D&_nc_ohc=deia3nQS3QEQ7kNvwF51is3&_nc_oc=AdptNyJSTcJA6nnS3MnfEFnyeR0pEhp_zVLdhn3alSRGd7aUuYjWvdoQqXVtpwiAcVk&_nc_ad=z-m&_nc_cid=1334&_nc_zt=23&_nc_ht=instagram.facc1-1.fna&_nc_gid=VdbvLFNIMm_Ml4wIFm9dIw&_nc_ss=7a22e&oh=00_Af6f1hjgb9lhrfqTVPglJcO4q819v9H7kzPQc99OZU6big&oe=69FAD9E6",
+      "title": "Legacy Plate",
+      "category": "Legacy",
+      "order": 28
+    }
+  ],
+  "config": {
+    "hero": {
+      "title": "A Standard in Osu Since the 90s.",
+      "subtitle": "Authentic Flavor. Legendary Nights.",
+      "description": "Epo's started on the 8th Lane in Osu and has remained a local favorite for decades. We focus on consistent quality, serving our signature beef sauce and fried rice to longtime regulars and new visitors alike."
+    },
+    "brand": {
+      "name": "Epo's Bar & Grill",
+      "tagline": "Osu's Midnight Kitchen"
+    }
+  },
+  "reservations": [],
+  "admins": [
+    "ko2527600@gmail.com",
+    "admin@epos.com",
+    "godfredfokuo199@gmail.com"
+  ]
+}
