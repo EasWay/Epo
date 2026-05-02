@@ -67,6 +67,19 @@
   .perspective-2000 {
     perspective: 2000px;
   }
+
+  /* Responsive Typography Scaling */
+  .heading-hero {
+    @apply text-4xl sm:text-6xl md:text-7xl lg:text-8xl;
+  }
+
+  .heading-section {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-7xl;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-20 md:py-24;
+  }
 }
 
 /* Animations */
@@ -77,6 +90,14 @@
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 @keyframes beam {

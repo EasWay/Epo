@@ -133,8 +133,8 @@ export default function AdminDashboard() {
 
   return (
     <div className="min-h-screen bg-[#050505] flex">
-      {/* Sidebar */}
-      <aside className="w-72 border-r border-white/5 p-8 flex flex-col fixed h-screen bg-[#0A0A0B]">
+      {/* Sidebar - Desktop */}
+      <aside className="hidden lg:flex w-72 border-r border-white/5 p-8 flex-col fixed h-screen bg-[#0A0A0B]">
         <div className="mb-12 px-2">
           <span className="text-xl font-serif">EPO'S<span className="text-gold">CORE</span></span>
           <p className="text-[8px] uppercase tracking-[0.4em] text-white/20 mt-1">Management Suite v1.0</p>
@@ -158,16 +158,24 @@ export default function AdminDashboard() {
       </aside>
 
       {/* Main Content */}
-      <main className="ml-72 flex-grow p-12">
-        <header className="flex justify-between items-center mb-12">
+      <main className="ml-0 lg:ml-72 flex-grow p-6 lg:p-12 pb-32 lg:pb-12">
+        {/* Mobile Navigation Bar */}
+        <div className="lg:hidden fixed bottom-0 left-0 right-0 z-[100] glass border-t border-white/10 px-4 py-3 flex justify-around items-center">
+           <MobileNavBtn icon={BarChart3} active={activeTab === 'dashboard'} onClick={() => setActiveTab('dashboard')} />
+           <MobileNavBtn icon={Utensils} active={activeTab === 'menu'} onClick={() => setActiveTab('menu')} />
+           <MobileNavBtn icon={ImageIcon} active={activeTab === 'gallery'} onClick={() => setActiveTab('gallery')} />
+           <MobileNavBtn icon={Users} active={activeTab === 'reservations'} onClick={() => setActiveTab('reservations')} count={reservations.filter(r => r.status === 'pending').length} />
+           <MobileNavBtn icon={Settings} active={activeTab === 'settings'} onClick={() => setActiveTab('settings')} />
+        </div>
+        <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-8 sm:mb-12">
           <div>
-            <h2 className="text-4xl font-serif capitalize">{activeTab} <span className="italic text-gold">Overview.</span></h2>
-            <p className="text-white/40 text-sm mt-1">Real-time synchronization active.</p>
+            <h2 className="text-2xl sm:text-4xl font-serif capitalize">{activeTab} <span className="italic text-gold">Overview.</span></h2>
+            <p className="text-white/40 text-[10px] sm:text-sm mt-1">Real-time synchronization active.</p>
           </div>
           <div className="flex items-center space-x-4">
-             <div className="px-4 py-2 bg-white/5 rounded-full border border-white/10 flex items-center space-x-3">
-                <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-[10px] uppercase tracking-widest font-bold text-white/60">Server Connected</span>
+             <div className="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/5 rounded-full border border-white/10 flex items-center space-x-2 sm:space-x-3">
+                <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="text-[8px] sm:text-[10px] uppercase tracking-widest font-bold text-white/60">Server Connected</span>
              </div>
           </div>
         </header>
@@ -203,6 +211,25 @@ function NavBtn({ icon: Icon, label, active, onClick, count }: { icon: any; labe
   );
 }
 
+function MobileNavBtn({ icon: Icon, active, onClick, count }: { icon: any; active: boolean; onClick: () => void; count?: number }) {
+  return (
+    <button 
+      onClick={onClick}
+      className={cn(
+        "relative p-3 rounded-xl transition-all",
+        active ? "bg-gold text-black scale-110" : "text-white/40"
+      )}
+    >
+      <Icon size={20} />
+      {count ? (
+        <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-[8px] flex items-center justify-center rounded-full font-bold">
+          {count}
+        </span>
+      ) : null}
+    </button>
+  );
+}
+
 function DashboardContent({ reservations, menuItems }: { reservations: Reservation[]; menuItems: MenuItem[] }) {
   const stats = [
     { label: "Active Bookings", val: reservations.filter(r => r.status === 'confirmed').length, color: "text-emerald-500" },
@@ -213,17 +240,17 @@ function DashboardContent({ reservations, menuItems }: { reservations: Reservati
 
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="space-y-8">
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         {stats.map(s => (
-          <div key={s.label} className="glass p-8 rounded-3xl border-white/5 space-y-2">
-            <p className="text-[10px] uppercase tracking-widest text-white/40">{s.label}</p>
-            <p className={cn("text-4xl font-serif", s.color)}>{s.val}</p>
+          <div key={s.label} className="glass p-5 sm:p-8 rounded-2xl sm:rounded-3xl border-white/5 space-y-2">
+            <p className="text-[8px] sm:text-[10px] uppercase tracking-widest text-white/40">{s.label}</p>
+            <p className={cn("text-2xl sm:text-4xl font-serif", s.color)}>{s.val}</p>
           </div>
         ))}
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="glass p-8 rounded-[2rem] border-white/5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+        <div className="glass p-6 sm:p-8 rounded-[1.5rem] sm:rounded-[2rem] border-white/5">
            <div className="flex justify-between items-center mb-8">
               <h3 className="text-xl font-serif italic italic-gold">Recent Inquiries</h3>
               <button className="text-[10px] uppercase tracking-widest text-white/40 hover:text-white">View All</button>

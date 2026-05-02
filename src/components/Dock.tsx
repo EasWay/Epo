@@ -31,8 +31,8 @@ function DockItem({ href, icon: Icon, mouseX, label }: DockItemProps) {
     return val - bounds.x - bounds.width / 2;
   });
 
-  const widthTransform = useTransform(distance, [-150, 0, 150], [40, 64, 40]);
-  const heightTransform = useTransform(distance, [-150, 0, 150], [40, 64, 40]);
+  const widthTransform = useTransform(distance, [-150, 0, 150], [36, 56, 36]);
+  const heightTransform = useTransform(distance, [-150, 0, 150], [36, 56, 36]);
 
   const width = useSpring(widthTransform, {
     mass: 0.1,
@@ -77,7 +77,7 @@ export default function Dock() {
       <div 
         onMouseMove={(e) => mouseX.set(e.pageX)}
         onMouseLeave={() => mouseX.set(Infinity)}
-        className="flex items-end h-16 gap-4 px-4 py-3 pb-4 glass rounded-3xl"
+        className="flex items-end h-14 sm:h-16 gap-3 sm:gap-4 px-3 sm:px-4 py-2 sm:py-3 pb-3 sm:pb-4 glass rounded-3xl"
       >
         {FOOTER_NAV.map((item) => (
           <DockItem 

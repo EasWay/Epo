@@ -60,7 +60,7 @@ export default function ReservationSystem() {
             className="space-y-8"
           >
             <div className="space-y-2">
-              <h3 className="text-3xl font-serif">Planning Your <span className="italic">Visit</span></h3>
+              <h3 className="text-2xl sm:text-3xl font-serif">Planning Your <span className="italic">Visit</span></h3>
               <p className="text-white/40 text-sm">Select your party size and preferred time.</p>
             </div>
 
@@ -95,7 +95,7 @@ export default function ReservationSystem() {
 
               <div className="space-y-2 md:col-span-2">
                 <label className="text-[10px] uppercase tracking-widest text-white/40 ml-1">Time</label>
-                <div className="grid grid-cols-4 md:grid-cols-6 gap-3">
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2 sm:gap-3">
                   {["18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30"].map(t => (
                     <button
                       key={t}
@@ -223,7 +223,7 @@ export default function ReservationSystem() {
               <CheckCircle2 className="text-gold" size={48} />
             </div>
             <div className="space-y-4">
-              <h3 className="text-4xl font-serif">You're <span className="italic">Booked!</span></h3>
+              <h3 className="text-3xl sm:text-4xl font-serif">You're <span className="italic">Booked!</span></h3>
               <p className="text-white/60 max-w-xs mx-auto leading-relaxed">
                 Confirmation sent to <span className="text-white font-medium">{formData.email}</span>. 
                 We'll see you on <span className="text-white font-medium">{formData.date}</span> at <span className="text-white font-medium">{formData.time}</span>.

@@ -19,6 +19,9 @@ export function optimizeImage(url: string, width: number = 800, quality: number 
     // fit=crop ensures the aspect ratio is maintained as requested
     return `${url}${separator}w=${width}&q=${quality}&auto=format&fit=crop`;
   }
+  if (url.includes('instagram') || url.includes('fbcdn.net')) {
+    return `https://images.weserv.nl/?url=${encodeURIComponent(url)}&default=${encodeURIComponent(url)}`;
+  }
   
   return url;
 }

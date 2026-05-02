@@ -13,21 +13,20 @@ export default function About() {
         <div className="flex flex-col lg:flex-row gap-20 items-center mb-32">
           <div className="lg:w-1/2 space-y-8">
             <p className="text-[11px] uppercase tracking-[0.5em] text-gold font-bold">The Legacy</p>
-            <h1 className="text-5xl md:text-8xl font-serif leading-tight">
+            <h1 className="heading-hero serif leading-tight">
               A Taste of <br />
               <span className="italic">Osu History.</span>
             </h1>
-            <p className="text-white/60 text-lg font-light leading-relaxed max-w-xl">
+            <p className="text-white/60 text-base sm:text-lg font-light leading-relaxed max-w-xl">
               Since the early 1990s, Epo's Bar & Grill has been a cornerstone of 
               Accra's 8th Lane. What started as a local neighborhood spot has grown 
               into a legendary destination for nocturnal diners, foodies, and tourists alike.
             </p>
-            <p className="text-white/60 text-lg font-light leading-relaxed max-w-xl">
+            <p className="text-white/60 text-base sm:text-lg font-light leading-relaxed max-w-xl">
               Our culinary philosophy is simple: authentic flavors, fresh ingredients, 
               and a fusion of Ghanaian soul with Chinese precision. Its's where the 
               energy of the city meets the comfort of a home-cooked meal.
-            </p>
-          </div>
+            </p>          </div>
           <div className="lg:w-1/2 relative aspect-square group">
              <div className="absolute inset-4 border border-gold/20 scale-105 group-hover:scale-100 transition-transform duration-700" />
              <img 

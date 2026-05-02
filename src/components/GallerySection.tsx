@@ -33,13 +33,13 @@ export default function GallerySection() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <p className="text-[11px] uppercase tracking-[0.4em] text-gold font-medium mb-4">Visual Heritage</p>
-          <h2 className="text-4xl md:text-6xl serif font-normal mb-6">
+          <h2 className="heading-section serif font-normal mb-6">
             Capturing the <span className="italic">Soul.</span>
           </h2>
           <div className="w-24 h-px bg-gold/30 mx-auto"></div>
         </div>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-3 space-y-3">
           {images.slice(0, visibleCount).map((img, index) => (
             <motion.div
               key={img.id}
@@ -58,11 +58,11 @@ export default function GallerySection() {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                 <Maximize2 className="text-white" size={32} strokeWidth={1} />
+                 <Maximize2 className="text-white" size={20} strokeWidth={1} />
               </div>
-              <div className="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                 <p className="text-[10px] uppercase tracking-widest text-gold mb-1 font-bold">{img.category}</p>
-                 <h4 className="text-white serif text-lg">{img.title}</h4>
+              <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
+                 <p className="text-[8px] uppercase tracking-widest text-gold mb-0.5 font-bold">{img.category}</p>
+                 <h4 className="text-white serif text-xs">{img.title}</h4>
               </div>
             </motion.div>
           ))}
@@ -103,13 +103,13 @@ export default function GallerySection() {
               initial={{ scale: 0.9, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 20 }}
-              src={selectedImage.url}
+              src={optimizeImage(selectedImage.url, 1200, 90)}
               alt={selectedImage.title}
               className="max-w-full max-h-[85vh] object-contain shadow-2xl border border-white/10"
               onClick={(e) => e.stopPropagation()}
             />
-            <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-center">
-              <h3 className="text-3xl font-serif text-white mb-2">{selectedImage.title}</h3>
+            <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-center w-full px-6">
+              <h3 className="text-xl sm:text-3xl font-serif text-white mb-2">{selectedImage.title}</h3>
               <p className="text-[10px] uppercase tracking-[0.5em] text-gold">{selectedImage.category}</p>
             </div>
           </motion.div>

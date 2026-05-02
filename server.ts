@@ -3,6 +3,8 @@ import { createServer as createViteServer } from "vite";
 import path from "path";
 import { fileURLToPath } from "url";
 import fs from "fs/promises";
+import https from "https";
+import http from "http";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -178,6 +180,52 @@ async function startServer() {
     } else {
       res.status(401).json({ success: false });
     }
+  });
+
+  // Image Proxy to bypass CORP/CORS for Instagram images
+  app.get("/image-proxy", (req, res) => {
+    const imageUrl = req.query.url as string;
+    console.log(">>> [SERVER] Proxying image request for:", imageUrl);
+    
+    if (!imageUrl) {
+      return res.status(400).send("URL parameter is required");
+    }
+
+    try {
+      const url = new URL(imageUrl);
+      const protocol = url.protocol === 'https:' ? https : http;
+      
+      const proxyReq = protocol.request(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+          'Accept': 'image/*'
+        }
+      }, (proxyRes) => {
+        if (proxyRes.statusCode !== 200) {
+          console.error(`Proxy error: Received status ${proxyRes.statusCode}`);
+          res.status(proxyRes.statusCode || 500).send("Error fetching image");
+          return;
+        }
+
+        res.setHeader("Content-Type", proxyRes.headers["content-type"] || "image/jpeg");
+        res.setHeader("Cache-Control", "public, max-age=86400");
+        proxyRes.pipe(res);
+      });
+
+      proxyReq.on('error', (err) => {
+        console.error("Proxy request error:", err);
+        res.status(500).send("Error proxying image");
+      });
+
+      proxyReq.end();
+    } catch (error) {
+      console.error("Proxy setup error:", error);
+      res.status(500).send("Invalid URL or proxy error");
+    }
+  });
+
+  app.get("/api/test", (req, res) => {
+    res.send("Backend is alive!");
   });
 
   app.get("/api/health", (req, res) => {
