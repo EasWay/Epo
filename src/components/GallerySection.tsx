@@ -8,7 +8,7 @@ import { X, Maximize2 } from "lucide-react";
 export default function GallerySection() {
   const [images, setImages] = useState<any[]>(GALLERY_IMAGES);
   const [selectedImage, setSelectedImage] = useState<any | null>(null);
-  const [visibleCount, setVisibleCount] = useState(20);
+  const [visibleCount, setVisibleCount] = useState(10);
 
   useEffect(() => {
     const fetchGallery = async () => {

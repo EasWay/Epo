@@ -3,7 +3,7 @@ export interface MenuItem {
   name: string;
   description: string;
   price: string;
-  category: 'Ghanaian' | 'Chinese-Fusion' | 'Drinks' | 'Appetizers' | 'Sides';
+  category: string;
   image?: string;
   order?: number;
 }

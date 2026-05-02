@@ -31,15 +31,21 @@ export default function BookMenu() {
   const totalPages = Math.ceil(items.length / ITEMS_PER_PAGE);
 
   const nextPage = () => {
+    if (items.length === 0) return;
     setDirection(1);
-    setPage((p) => Math.min(p + 1, totalPages - 1));
+    // On mobile we have a cover page (page 0), so we need page to go up to totalPages
+    // On desktop we only need to go up to totalPages - 1
+    setPage((p) => Math.min(p + 1, totalPages));
   };
+
   const prevPage = () => {
     setDirection(-1);
     setPage((p) => Math.max(p - 1, 0));
   };
 
-  const currentPageItems = items.slice(page * ITEMS_PER_PAGE, (page + 1) * ITEMS_PER_PAGE);
+  // Ensure desktop doesn't show an empty page if mobile went to a higher page index
+  const desktopPage = Math.min(page, Math.max(0, totalPages - 1));
+  const currentPageItems = items.slice(desktopPage * ITEMS_PER_PAGE, (desktopPage + 1) * ITEMS_PER_PAGE);
 
   if (isLoading) {
     return (
@@ -127,7 +133,7 @@ export default function BookMenu() {
                       </button>
                       <button 
                         onClick={nextPage} 
-                        disabled={page === totalPages - 1} 
+                        disabled={desktopPage === totalPages - 1} 
                         className="w-12 h-12 flex items-center justify-center bg-white/5 border border-white/10 rounded-full hover:bg-gold hover:text-black hover:border-gold disabled:opacity-10 transition-all cursor-pointer"
                       >
                         <ChevronRight size={20} strokeWidth={1.5} />
@@ -173,7 +179,7 @@ export default function BookMenu() {
                    <p className="text-[9px] uppercase tracking-[0.5em] text-white/10 font-bold">Provenance: 8th Lane, Accra</p>
                    <div className="flex space-x-1">
                       {[...Array(totalPages)].map((_, i) => (
-                        <div key={i} className={cn("w-1.5 h-1.5 rounded-full transition-all duration-500", i === page ? "bg-gold w-4" : "bg-white/10")} />
+                        <div key={i} className={cn("w-1.5 h-1.5 rounded-full transition-all duration-500", i === desktopPage ? "bg-gold w-4" : "bg-white/10")} />
                       ))}
                    </div>
                 </div>
@@ -205,7 +211,7 @@ export default function BookMenu() {
 
         <div className="relative h-[620px] perspective-3000 w-full overflow-hidden">
           {/* Static Background Page (The next one) */}
-          {page < totalPages && (
+           {page < totalPages && (
             <div className="absolute inset-0 scale-[0.98] opacity-50 blur-[2px]">
                <div className="bg-[#0C0C0E] border border-white/10 p-8 h-full flex flex-col rounded-[2rem]">
                   <div className="flex justify-between items-center mb-10">
@@ -259,10 +265,13 @@ export default function BookMenu() {
               exit="exit"
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
-              dragElastic={0.2}
-              onDragEnd={(e, { offset }) => {
-                if (offset.x < -60 && page < totalPages) nextPage();
-                if (offset.x > 60 && page > 0) prevPage();
+              dragElastic={0.6}
+              onDragEnd={(e, { offset, velocity }) => {
+                const swipe = Math.abs(offset.x) > 50 || Math.abs(velocity.x) > 500;
+                if (swipe) {
+                  if (offset.x < 0 && page < totalPages) nextPage();
+                  if (offset.x > 0 && page > 0) prevPage();
+                }
               }}
               className="absolute inset-0 preserve-3d cursor-grab active:cursor-grabbing z-20"
             >
