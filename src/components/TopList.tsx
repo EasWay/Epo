@@ -2,6 +2,7 @@ import { motion, useTransform, useMotionValue } from "motion/react";
 import { Star } from "lucide-react";
 import { optimizeImage } from "../lib/imageOptimization";
 import { RESTAURANT_INFO } from "../constants";
+import { cn } from "../lib/utils";
 
 const TOP_ITEMS = [
   {
@@ -62,7 +63,10 @@ export default function TopList({ scrollProgress }: { scrollProgress?: any }) {
               className="glass-card rounded-[2.5rem] sm:rounded-[3rem] p-6 sm:p-8 pt-20 sm:pt-24 group relative min-w-[280px] sm:min-w-[300px] lg:w-full h-[320px] sm:h-[360px] mx-auto flex flex-col items-start overflow-visible shadow-2xl shadow-black/50 snap-center first:ml-4 last:mr-4 lg:first:ml-0 lg:last:mr-0"
             >
               {/* Floating Circular Image - Slot for Hero Transition if index 0 */}
-              <div className="absolute -top-24 sm:-top-32 left-1/2 -translate-x-1/2 w-48 sm:w-64 h-48 sm:h-64 transition-transform duration-700 z-20">
+              <div className={cn(
+                "absolute -top-24 sm:-top-32 left-1/2 -translate-x-1/2 w-48 sm:w-64 h-48 sm:h-64 transition-transform duration-700 z-20",
+                index === 0 && "lg:hidden"
+              )}>
                 <img
                   src={optimizeImage(item.image, 400, 85)}
                   alt={item.name}
